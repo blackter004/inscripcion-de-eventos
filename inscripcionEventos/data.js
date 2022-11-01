@@ -47,7 +47,7 @@ function validar(){
         localStorage.setItem("registro", rEvento)
 
     //aqui idee como enviar el contenido del localstorage a la consola    
-    if(valor>1000){
+    if(valor<1000){
         let barato =  JSON.parse(localStorage.getItem("ticketEconomico"))  || [] ;
 
         barato.push(evento);
