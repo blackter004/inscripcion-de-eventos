@@ -53,15 +53,15 @@ function validar(){
 
  function search(){
 
-    // Get all events from local storage
+    // Obtener todos los eventos del local storage
     const events = JSON.parse(localStorage.getItem('event'))
 
-    // Filtered events by total
+    // Eventos filtrados por total
     const eventsFiltered =  events.filter(function(event){
         return event.valor_total <= 1000;
     });
 
-    // Save events filtered in local storage
+    // Guardar eventos filtrados en el local storage
     localStorage.setItem('lowTickets', JSON.stringify(eventsFiltered));
 
     console.log(localStorage.getItem('lowTickets'))
