@@ -2,7 +2,7 @@ function validar(){
     var id = document.getElementById('idEv').value;
     var name = document.getElementById('nameEv').value;
     var responsable = document.getElementById('nameRe').value;
-    var valor = document.getElementById('valorTicket').value;
+    var valor = Number(document.getElementById('valorTicket').value);
     var numeroTick = document.getElementById('numberTicket').value;
     var telefono = document.getElementById('phoneCon').value;
     var correo = document.getElementById('mailCon').value;
@@ -33,7 +33,7 @@ function validar(){
         name_evento: name,
         name_responsable: responsable,
         valor_usuario: valor,
-        valor_total: (valor*0.16)+valor,
+        valor_total: ((valor*0.16)+valor),
         cantidad_ticket: numeroTick,
         numero_telefono: telefono,
         email: correo
