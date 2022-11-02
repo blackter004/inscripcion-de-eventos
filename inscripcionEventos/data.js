@@ -32,7 +32,8 @@ function validar(){
         id_evento: id,
         name_evento: name,
         name_responsable: responsable,
-        valor_total: valor*0.16,
+        valor_usuario: valor,
+        valor_total: (valor*0.16)+valor,
         cantidad_ticket: numeroTick,
         numero_telefono: telefono,
         email: correo
